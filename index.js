@@ -43,5 +43,5 @@ if (commander.args.length !== 2) {
   commander.help();
   console.log('\n');
 } else {
-  run(...commander.args);
+  run(...commander.args).catch(console.error);
 }
